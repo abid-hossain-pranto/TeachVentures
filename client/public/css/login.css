@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    display: flex;
+    margin: 20px;
+    padding: 20px;
+    justify-content: center;
+    align-items: flex-start;
+    background: linear-gradient(135deg, #10285f, #1148c3);
+    background-size: contain;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.container {
+    width: 120%; 
+    max-width: 1200px; 
+    background: #fff;
+    padding: 35px 40px; 
+    border-radius: 5px;
+    margin-top: 40%; 
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: auto; /* Center the container horizontally */
+    margin-right: auto; /* Center the container horizontally */
+}
+
+
+.container .title {
+    font-size: 25px;
+    font-weight: 500;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.container .title::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 30px;
+    background: linear-gradient(135deg, #10285f, #1148c3);
+}
+
+.container form .user-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container form .user-details .input-box {
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.container form .user-details .input-box .details {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.container form .user-details .input-box input,
+.container form .user-details .input-box textarea {
+    height: 45px;
+    width: 100%;
+    padding: 0 10px;
+}
+
+.forgot-password {
+    margin-bottom: 10px;
+}
+
+.register-link {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.register-link a {
+    text-decoration: none;
+    color: #1148c3;
+}
+
+.register-link a:hover {
+    text-decoration: underline;
+}
+
+.button {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.container .button input[type="submit"] {
+    padding: 10px 20px;
+    border: none;
+    background: #1148c3;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s ease;
+}
+
+.container .button input[type="submit"]:hover {
+    background: #10285f;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 25px 30px;
+    }
+    
+    .container .title {
+        font-size: 20px;
+    }
+}

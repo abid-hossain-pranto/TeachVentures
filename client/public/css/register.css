@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    display: flex;
+    margin: 20px;
+    height: 100vh;
+    padding: 20px;
+    justify-content: center;
+    align-items: flex-start;
+    background: linear-gradient(135deg, #10285f, #1148c3);
+    background-size: contain;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.container {
+    max-width: 700px;
+    width: 100%;
+    background: #fff;
+    padding: 25px 30px;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.container .title {
+    font-size: 25px;
+    font-weight: 500;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.container .title::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 30px;
+    background: linear-gradient(135deg, #10285f, #1148c3);
+}
+
+.container form .user-details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.container form .user-details .input-box {
+    margin-bottom: 20px;
+    width: calc(50% - 10px);
+}
+
+.container form .user-details .input-box .details {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.container form .user-details .input-box input,
+.container form .user-details .input-box textarea {
+    height: 45px;
+    width: 100%;
+    padding: 0 10px;
+}
+
+.container .gender-details {
+    margin-top: 20px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.container .category {
+    display: flex;
+}
+
+.container .gender-title {
+    font-weight: 500;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    padding:0;
+}
+
+.container .gender {
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+    margin-bottom: 10px;
+}
+
+.container .dot {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    border: 2px solid #1148c3;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.container .gender-text {
+    margin-right: 5px;
+    
+}
+
+.container .button {
+    margin-top: 20px;
+}
+
+.container .button input[type="submit"] {
+    padding: 10px 20px;
+    border: none;
+    background: #1148c3;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s ease;
+}
+
+.container .button input[type="submit"]:hover {
+    background: #10285f;
+}
+
+.container .agreement-checkbox {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+
+.container .agreement{
+    margin-bottom: 10px;
+}
+
+
+.container-wrapper {
+    margin-bottom: 40px;
+}
+
+
+
+
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+    .container form .user-details .input-box {
+        width: 100%;
+    }
+}

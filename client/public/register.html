@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="css/register.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div class="container-wrapper">
+    <div class="container">
+        <div class="title">
+            Registration
+        </div>
+
+        <!-- Personal Details -->
+        <form action="#">
+            <div class="user-details">
+                <div class="input-box">
+                    <span class="details">First Name</span>
+                    <input type="text" placeholder="Enter Your First Name" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">Last Name</span>
+                    <input type="text" placeholder="Enter Your Last Name" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">Email</span>
+                    <input type="email" placeholder="Enter Your Email" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">Phone No.</span>
+                    <input type="tel" placeholder="Enter Your Phone No." required>
+                </div>
+                <div class="input-box">
+                    <span class="details">Password</span>
+                    <input type="password" placeholder="Enter Your Password" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">Confirm Password</span>
+                    <input type="password" placeholder="Confirm Password" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">Date of Birth</span>
+                    <input type="date" required>
+                </div>
+                
+            </div>
+        </form>
+
+        <!-- Medical Information -->
+        <form action="#">
+            <div class="user-details">
+                <div class="input-box">
+                    <span class="details">Existing Medical Conditions</span>
+                    <input type="text" placeholder="Existing Medical Conditions">
+                </div>
+                <div class="input-box">
+                    <span class="details">Allergies</span>
+                    <input type="text" placeholder="Allergies">
+                </div>
+                <div class="input-box">
+                    <span class="details">Current Medications</span>
+                    <input type="text" placeholder="Current Medications">
+                </div>
+                <div class="input-box">
+                    <span class="details">Previous Surgeries or Procedures</span>
+                    <input type="text" placeholder="Previous Surgeries or Procedures">
+                </div>
+            </div>
+        </form>
+
+        <!-- Insurance Information -->
+        <form action="#">
+            <div class="user-details">
+                <div class="input-box">
+                    <span class="details">Insurance Provider</span>
+                    <input type="text" placeholder="Insurance Provider">
+                </div>
+                <div class="input-box">
+                    <span class="details">Policy Number</span>
+                    <input type="text" placeholder="Policy Number">
+                </div>
+                <div class="input-box">
+                    <span class="details">Primary Care Physician</span>
+                    <input type="text" placeholder="Primary Care Physician (if applicable)">
+                </div>
+            </div>
+        </form>
+
+        <!-- Emergency Contact -->
+        <form action="#">
+            <div class="user-details">
+                <div class="input-box">
+                    <span class="details">Name of Emergency Contact</span>
+                    <input type="text" placeholder="Name of Emergency Contact">
+                </div>
+                <div class="input-box">
+                    <span class="details">Relationship to the Patient</span>
+                    <input type="text" placeholder="Relationship to the Patient">
+                </div>
+                <div class="input-box">
+                    <span class="details">Contact Information for Emergency Contact</span>
+                    <input type="tel" placeholder="Contact Information for Emergency Contact">
+                </div>
+            </div>
+        </form>
+
+                <!-- Language and Accessibility Needs -->
+                <form action="#">
+                    <div class="user-details">
+                        <div class="input-box">
+                            <span class="details">Preferred Language</span>
+                            <input type="text" placeholder="Preferred Language for Communication">
+                        </div>
+                    </div>
+                </form>
+
+                <div class="gender-details">
+                    <span class="gender-title">Gender</span>
+                    <div class="category">
+                        <label for="male" class="gender">
+                            <input type="radio" id="male" name="gender" value="male" required>
+                   
+                            <span class="gender-text">Male</span>
+                        </label>
+                        <label for="female" class="gender">
+                            <input type="radio" id="female" name="gender" value="female" required>
+                      
+                            <span class="gender-text">Female</span>
+                        </label>
+                        <label for="other" class="gender">
+                            <input type="radio" id="other" name="gender" value="other" required>
+                         
+                            <span class="gender-text">Other</span>
+                        </label>
+                    </div>
+                </div>
+
+        <!-- Consent and Privacy -->
+       
+        
+            <!-- Agreement to Hospital Policies -->
+            <div class="agreement">
+                <input type="checkbox" id="policy1" class="agreement-checkbox">
+                <label for="policy1">I agree to hospital policies regarding privacy and data usage</label>
+            </div>
+            <div class="agreement">
+                <input type="checkbox" id="policy2" class="agreement-checkbox">
+                <label for="policy2">I agree to receive treatment</label>
+            </div>
+            <!-- Add more agreements as needed -->
+        
+
+     
+
+        <!-- Register Button -->
+        <div class="button">
+            <input type="submit" value="Register">
+        </div>
+    </div>
+    </div>
+</body>
+</html>
